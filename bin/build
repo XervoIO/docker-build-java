@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+if [[ ! -d $INPUT_DIR ]] || [[ ! -d $OUTPUT_DIR ]]; then
+  echo "Input/Output directories must exist.\n"
+  exit 1
+fi
+
+cp -R $INPUT_DIR/* $OUTPUT_DIR
