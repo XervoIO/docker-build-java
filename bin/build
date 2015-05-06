@@ -6,4 +6,4 @@ if [[ ! -d $INPUT_DIR ]] || [[ ! -d $OUTPUT_DIR ]]; then
   exit 1
 fi
 
-cp -R $INPUT_DIR/* $OUTPUT_DIR
+cp -R $INPUT_DIR/. $OUTPUT_DIR
